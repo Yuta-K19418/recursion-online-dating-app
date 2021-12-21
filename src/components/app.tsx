@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home";
+import UsersList from "../pages/usersList";
 import AppBar from "./appBar";
 import SideNavBar from "./sideNavBar";
 
@@ -15,7 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/user-list" />
+          <Route path="/user-list" element={<UsersList />} />
         </Routes>
         <Routes>
           <Route path="/message-list" />
