@@ -6,7 +6,7 @@ import { Users } from "../types/users";
 
 const RetrieveUsersData = () => {
   return async (dispatch: Dispatch<UsersType["action"]>, getState: () => RootState) => {
-    const usersData: Users = await fetch("https://randomuser.me/api/", {
+    const usersData: Users = await fetch("https://randomuser.me/api/?results=100", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
