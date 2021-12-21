@@ -7,7 +7,7 @@ const SideNavBar = () => {
     <Box
       sx={{
         color: "white",
-        backgroundColor: "#000000",
+        backgroundColor: "#000010",
         width: 200,
         height: "100%",
       }}

@@ -10,7 +10,7 @@ interface Props {
 const AppBar = (props: Props) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <MuiAppBar position="static" style={{ color: "#c6c6c6", backgroundColor: "#000080" }}>
+      <MuiAppBar position="static" style={{ color: "#c6c6c6", backgroundColor: "#000020" }}>
         <Toolbar>
           <IconButton
             size="large"

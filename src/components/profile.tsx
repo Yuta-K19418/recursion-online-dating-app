@@ -17,7 +17,7 @@ const Profile = (props: Props) => {
         justifyContent: "center",
         alignItems: "center",
         margin: 2,
-        backgroundColor: "#000000",
+        backgroundColor: "#000010",
       }}
     >
       <CardMedia
