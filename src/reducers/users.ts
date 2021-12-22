@@ -5,7 +5,9 @@ const UsersReducer = (state = initialUsersState, action: UsersType["action"]): U
   switch (action.type) {
     case "RETRIEVE_USERS_DATA":
       state.users = action.payload.users;
-      return state;
+      return {
+        ...state,
+      };
     default:
       return state;
   }

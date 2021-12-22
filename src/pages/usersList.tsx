@@ -6,11 +6,13 @@ import { RootState } from "../stores";
 import { Result } from "../types/users";
 
 const UsersList = () => {
+  const usersData = useSelector((state: RootState) => state.users["users"]);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(RetrieveUsersData());
-  }, [dispatch]);
-  const usersData = useSelector((state: RootState) => state.users["users"]);
+    if (usersData.results.length < 1) {
+      dispatch(RetrieveUsersData());
+    }
+  }, [dispatch, usersData.results.length]);
   return (
     <div
       style={{
