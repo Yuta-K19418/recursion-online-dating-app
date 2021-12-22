@@ -1,5 +1,6 @@
 import { Button, Card, CardActions, CardContent, CardMedia, IconButton, Typography } from "@mui/material";
 import MessageIcon from "@mui/icons-material/Message";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { Result } from "../types/users";
 
 interface Props {
@@ -31,6 +32,7 @@ const Profile = (props: Props) => {
           {props.userData.name.first} {props.userData.name.last}
         </Typography>
         <Typography variant="body2" color="#c6c6c6">
+          <LocationOnIcon fontSize="small" />
           {props.userData.location.city} / Age: {props.userData.dob.age}
         </Typography>
       </CardContent>
