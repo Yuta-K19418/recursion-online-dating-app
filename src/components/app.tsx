@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import Chat from "../pages/chat";
 import Home from "../pages/home";
 import UsersList from "../pages/usersList";
 import AppBar from "./appBar";
@@ -33,6 +34,9 @@ const App = () => {
           </Routes>
           <Routes>
             <Route path="/user-list" element={<UsersList />} />
+          </Routes>
+          <Routes>
+            <Route path="/user/:userId/chat" element={<Chat />} />
           </Routes>
           <Routes>
             <Route path="/message-list" />
