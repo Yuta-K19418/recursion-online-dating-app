@@ -22,7 +22,8 @@ const UsersList = () => {
         alignItems: "center",
       }}
     >
-      {usersData.results.length > 0 && usersData.results.map((user: Result) => <Profile userData={user} />)}
+      {usersData.results.length > 0 &&
+        usersData.results.map((user: Result) => <Profile key={user.login.uuid} userData={user} />)}
     </div>
   );
 };
