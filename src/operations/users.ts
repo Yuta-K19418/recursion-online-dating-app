@@ -4,9 +4,9 @@ import { RootState } from "../stores";
 import { UsersType } from "../types";
 import { Users } from "../types/users";
 
-const RetrieveUsersData = () => {
+const RetrieveUsersData = (gender: string) => {
   return async (dispatch: Dispatch<UsersType["action"]>, getState: () => RootState) => {
-    const usersData: Users = await fetch("https://randomuser.me/api/?results=100", {
+    const usersData: Users = await fetch(`https://randomuser.me/api/?results=100&gender=${gender}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

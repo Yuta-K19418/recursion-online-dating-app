@@ -5,14 +5,18 @@ import RetrieveUsersData from "../operations/users";
 import { RootState } from "../stores";
 import { Result } from "../types/users";
 
-const UsersList = () => {
+interface Props {
+  gender: string;
+}
+
+const UsersList = (props: Props) => {
   const usersData = useSelector((state: RootState) => state.users["users"]);
   const dispatch = useDispatch();
   useEffect(() => {
     if (usersData.results.length < 1) {
-      dispatch(RetrieveUsersData());
+      dispatch(RetrieveUsersData(props.gender));
     }
-  }, [dispatch, usersData.results.length]);
+  }, [dispatch, usersData.results.length, props.gender]);
   return (
     <div
       style={{

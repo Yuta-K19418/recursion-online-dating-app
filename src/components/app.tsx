@@ -8,6 +8,7 @@ import SideNavBar from "./sideNavBar";
 
 const App = () => {
   const [menuButtonState, setMenuButtonState] = useState(true);
+  const [gender, setGender] = useState("");
   return (
     <React.Fragment>
       <AppBar menuButtonState={menuButtonState} setMenuButtonState={setMenuButtonState} />
@@ -30,10 +31,10 @@ const App = () => {
           }
         >
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home setGender={setGender} />} />
           </Routes>
           <Routes>
-            <Route path="/user-list" element={<UsersList />} />
+            <Route path="/user-list" element={<UsersList gender={gender} />} />
           </Routes>
           <Routes>
             <Route path="/user/:userId/chat" element={<Chat />} />
