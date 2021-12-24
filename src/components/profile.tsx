@@ -135,7 +135,7 @@ const Profile = (props: Props) => {
                 marginX: 3,
                 paddingX: 2,
                 borderBottom: 1,
-                borderColor: "#c6c6c6"
+                borderColor: "#c6c6c6",
               }}
             >
               <Typography variant="subtitle1" color="#c6c6c6">
@@ -154,7 +154,7 @@ const Profile = (props: Props) => {
                 marginX: 3,
                 paddingX: 2,
                 borderBottom: 1,
-                borderColor: "#c6c6c6"
+                borderColor: "#c6c6c6",
               }}
             >
               <Typography variant="subtitle1" color="#c6c6c6">
@@ -173,7 +173,7 @@ const Profile = (props: Props) => {
                 marginX: 3,
                 paddingX: 2,
                 borderBottom: 1,
-                borderColor: "#c6c6c6"
+                borderColor: "#c6c6c6",
               }}
             >
               <Typography variant="subtitle1" color="#c6c6c6">
@@ -192,7 +192,7 @@ const Profile = (props: Props) => {
                 marginX: 3,
                 paddingX: 2,
                 borderBottom: 1,
-                borderColor: "#c6c6c6"
+                borderColor: "#c6c6c6",
               }}
             >
               <Typography variant="subtitle1" color="#c6c6c6">
@@ -211,7 +211,7 @@ const Profile = (props: Props) => {
                 marginX: 3,
                 paddingX: 2,
                 borderBottom: 1,
-                borderColor: "#c6c6c6"
+                borderColor: "#c6c6c6",
               }}
             >
               <Typography variant="subtitle1" color="#c6c6c6">
