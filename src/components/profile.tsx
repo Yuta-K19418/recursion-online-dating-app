@@ -133,7 +133,7 @@ const Profile = (props: Props) => {
                 width: "100%",
                 marginBottom: 1,
                 marginX: 3,
-                paddingX: 2,
+                paddingX: 1,
                 borderBottom: 1,
                 borderColor: "#c6c6c6",
               }}
@@ -142,7 +142,7 @@ const Profile = (props: Props) => {
                 Gender
               </Typography>
               <Typography variant="subtitle1" color="#c6c6c6">
-                {props.userData.gender === "male" ? "man" : "female"}
+                {props.userData.gender === "male" ? "Man" : "Woman"}
               </Typography>
             </Box>
             <Box
@@ -152,7 +152,7 @@ const Profile = (props: Props) => {
                 width: "100%",
                 marginBottom: 1,
                 marginX: 3,
-                paddingX: 2,
+                paddingX: 1,
                 borderBottom: 1,
                 borderColor: "#c6c6c6",
               }}
@@ -171,7 +171,7 @@ const Profile = (props: Props) => {
                 width: "100%",
                 marginBottom: 1,
                 marginX: 3,
-                paddingX: 2,
+                paddingX: 1,
                 borderBottom: 1,
                 borderColor: "#c6c6c6",
               }}
@@ -190,7 +190,7 @@ const Profile = (props: Props) => {
                 width: "100%",
                 marginBottom: 1,
                 marginX: 3,
-                paddingX: 2,
+                paddingX: 1,
                 borderBottom: 1,
                 borderColor: "#c6c6c6",
               }}
@@ -209,7 +209,7 @@ const Profile = (props: Props) => {
                 width: "100%",
                 marginBottom: 1,
                 marginX: 3,
-                paddingX: 2,
+                paddingX: 1,
                 borderBottom: 1,
                 borderColor: "#c6c6c6",
               }}
