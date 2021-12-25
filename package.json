@@ -38,7 +38,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "eslint --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore . && prettier '**/*.{js,jsx,ts,tsx}' --write",
-    "deploy": "npm build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "husky": {
     "hooks": {
