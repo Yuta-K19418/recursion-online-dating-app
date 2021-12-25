@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Chat from "../pages/chat";
 import Home from "../pages/home";
+import MessageList from "../pages/messageList";
 import UsersList from "../pages/usersList";
 import AppBar from "./appBar";
 import SideNavBar from "./sideNavBar";
@@ -39,7 +40,7 @@ const App = () => {
             <Route path="/user/:userId/chat" element={<Chat />} />
           </Routes>
           <Routes>
-            <Route path="/message-list" />
+            <Route path="/message-list" element={<MessageList />} />
           </Routes>
         </div>
       </div>
