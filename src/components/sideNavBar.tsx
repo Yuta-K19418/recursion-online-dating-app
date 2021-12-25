@@ -8,7 +8,7 @@ const SideNavBar = () => {
       sx={{
         color: "white",
         backgroundColor: "#000010",
-        width: 200,
+        width: "13%",
         height: "100%",
       }}
     >
