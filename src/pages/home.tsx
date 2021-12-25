@@ -10,32 +10,41 @@ interface Props {
 const Home = (props: Props) => {
   const navigate = useNavigate();
   const usersData = useSelector((state: RootState) => state.users["users"]);
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {usersData.results.length < 1 ? (
+  if (usersData.results.length < 1) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            width: "70%",
           }}
         >
-          <Typography variant="h4" component="div" color="#c6c6c6">
+          <Typography
+            variant="h4"
+            component="div"
+            color="#c6c6c6"
+            sx={{
+              marginBottom: 3,
+            }}
+          >
             You are
           </Typography>
           <div
             style={{
               display: "flex",
-              flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
+              width: "23%",
             }}
           >
             <Button
@@ -62,12 +71,14 @@ const Home = (props: Props) => {
             </Button>
           </div>
         </div>
-      ) : (
-        <Typography variant="h4" component="div" color="#c6c6c6">
-          There is no message...
-        </Typography>
-      )}
-    </div>
-  );
+      </div>
+    );
+  } else {
+    return (
+      <Typography variant="h4" component="div" color="#c6c6c6">
+        There is no message...
+      </Typography>
+    );
+  }
 };
 export default Home;

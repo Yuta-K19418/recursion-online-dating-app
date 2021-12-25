@@ -18,14 +18,13 @@ const App = () => {
           style={
             menuButtonState
               ? {
-                  maxWidth: "87%",
+                  width: "87%",
                   display: "flex",
-                  justifyContent: "flex-end",
                   overflow: "auto",
                 }
               : {
+                  width: "100%",
                   display: "flex",
-                  justifyContent: "flex-end",
                   overflow: "auto",
                 }
           }
