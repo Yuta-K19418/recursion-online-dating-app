@@ -180,7 +180,7 @@ const Profile = (props: Props) => {
                 Country
               </Typography>
               <Typography variant="subtitle1" color="#c6c6c6">
-                {nations[props.userData.nat]}
+                {!!nations[props.userData.nat] ? nations[props.userData.nat] : props.userData.nat}
               </Typography>
             </Box>
             <Box
