@@ -1,4 +1,4 @@
-import { UsersType } from "../types";
+import { ChatType, UsersType } from "../types";
 
 export const initialUsersState: UsersType["state"] = {
   users: {
@@ -10,4 +10,8 @@ export const initialUsersState: UsersType["state"] = {
       version: "",
     },
   },
+};
+
+export const initialChatState: ChatType["state"] = {
+  messages: {},
 };
