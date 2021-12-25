@@ -47,6 +47,7 @@ const Chat = () => {
         },
       ];
       dispatch(TextMessageAction(userId, messages));
+      setMessageStete("");
     }
   };
   return (
@@ -183,6 +184,7 @@ const Chat = () => {
           <TextField
             fullWidth={true}
             autoFocus={true}
+            value={messageState}
             placeholder="Send Message..."
             style={{
               color: "#c6c6c6",
