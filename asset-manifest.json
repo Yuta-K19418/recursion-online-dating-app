@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recursion-online-dating-app/static/css/main.733daeca.css",
+    "main.js": "/recursion-online-dating-app/static/js/main.416a06fe.js",
+    "static/js/787.a72d17bf.chunk.js": "/recursion-online-dating-app/static/js/787.a72d17bf.chunk.js",
+    "index.html": "/recursion-online-dating-app/index.html",
+    "main.733daeca.css.map": "/recursion-online-dating-app/static/css/main.733daeca.css.map",
+    "main.416a06fe.js.map": "/recursion-online-dating-app/static/js/main.416a06fe.js.map",
+    "787.a72d17bf.chunk.js.map": "/recursion-online-dating-app/static/js/787.a72d17bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.733daeca.css",
+    "static/js/main.416a06fe.js"
+  ]
+}
