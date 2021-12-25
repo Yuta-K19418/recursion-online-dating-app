@@ -15,6 +15,9 @@ const Chat = () => {
       style={{
         display: "flex",
         flexDirection: "column",
+        alignContent: "space-between",
+        width: "100%",
+        height: "100%",
       }}
     >
       <Typography
@@ -29,11 +32,17 @@ const Chat = () => {
       >
         {usersData[0].name.first} {usersData[0].name.last}
       </Typography>
+      <div style={{
+        height: "85%"
+      }}>
+
+      </div>
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-end",
+          height: "10%",
         }}
       >
         <TextField
@@ -42,6 +51,9 @@ const Chat = () => {
           placeholder="Send Message..."
           style={{
             color: "#c6c6c6",
+          }}
+          InputProps={{
+            style: {color: "#c6c6c6"},
           }}
         >
           {userId}
